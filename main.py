@@ -1,11 +1,10 @@
 import os
 import time
 import threading
-import subprocess
 import random
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
-from Flask import Flask
+from flask import Flask
 import pytchat
 import google.generativeai as genai
 import urllib.request
@@ -21,8 +20,7 @@ if GEMINI_API_KEY != "your_api_key":
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel('gemini-2.5-flash')
 
-# Vertical Game & Quiz States (No AI/24/7 labels)
-current_mode = "GAME"  # "GAME" or "QUIZ"
+current_mode = "GAME"
 score = 0
 level = 1
 snake_pos = [[360, 400], [340, 400], [320, 400]]
@@ -44,15 +42,15 @@ def generate_video_stream():
     global current_mode, score, level, snake_pos, snake_dir, food_pos, commentary
     global quiz_question, quiz_options, quiz_answer, timer_seconds, quiz_state
     
-    # Vertical Resolution for Shorts Feed (720x1280)
     width, height, fps = 720, 1280, 24
     rtmp_url = f"rtmp://a.rtmp.youtube.com/live2/{STREAM_KEY}"
     
+    # Bitrate reduced to 1200k for smooth rendering on Render free tier without dropped frames
     command = [
         'ffmpeg', '-y', 
         '-f', 'rawvideo', '-vcodec', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f"{width}x{height}", '-r', str(fps), '-i', '-',
         '-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=44100',
-        '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'ultrafast', '-b:v', '2500k',
+        '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'ultrafast', '-b:v', '1200k',
         '-g', '48', '-keyint_min', '48',
         '-c:a', 'aac', '-b:a', '128k',
         '-f', 'flv', rtmp_url
@@ -91,7 +89,6 @@ def generate_video_stream():
         img = Image.new('RGB', (width, height), color=(15, 22, 36))
         draw = ImageDraw.Draw(img)
         
-        # Vertical Top Header
         current_time = time.strftime('%H:%M:%S')
         draw.rectangle([0, 0, width, 80], fill=(26, 37, 55))
         draw.text((25, 20), "🎮 XOOMY GAMING ARENA", font=title_font, fill=(0, 255, 180))
@@ -101,7 +98,6 @@ def generate_video_stream():
             if frame_count % 5 == 0:
                 head = [snake_pos[0][0] + snake_dir[0], snake_pos[0][1] + snake_dir[1]]
                 
-                # Vertical Arena Bounds (Width 720 -> Box 40 to 680, Height 1280 -> Box 100 to 850)
                 if head[0] < 45: head[0] = 675
                 if head[0] > 675: head[0] = 45
                 if head[1] < 100: head[1] = 845
@@ -126,18 +122,14 @@ def generate_video_stream():
                 if random.random() < 0.2:
                     snake_dir = random.choice([[20, 0], [-20, 0], [0, 20], [0, -20]])
 
-            # Vertical Game Arena Box
             draw.rectangle([35, 95, 685, 855], outline=(70, 130, 180), width=3)
             
-            # Snake
             for idx, seg in enumerate(snake_pos):
                 color = (0, 255, 120) if idx == 0 else (0, 180, 90)
                 draw.rectangle([seg[0], seg[1], seg[0]+16, seg[1]+16], fill=color)
                 
-            # Food
             draw.ellipse([food_pos[0], food_pos[1], food_pos[0]+16, food_pos[1]+16], fill=(255, 60, 60))
             
-            # Vertical Bottom Stats & Commentary Panel
             draw.rectangle([35, 880, 685, 1235], fill=(22, 32, 48), outline=(70, 130, 180), width=2)
             draw.text((55, 900), f"📊 Score: {score}   |   Level: {level}", font=font, fill=(255, 200, 0))
             draw.text((55, 960), "💬 FEED:", font=small_font, fill=(0, 255, 180))
@@ -146,7 +138,6 @@ def generate_video_stream():
             draw.text((55, 1100), "👉 Type answers in live chat!", font=font, fill=(0, 255, 180))
 
         elif current_mode == "QUIZ":
-            # Vertical Quiz Box
             draw.rectangle([35, 95, 685, 1235], fill=(22, 32, 48), outline=(0, 255, 180), width=4)
             draw.text((60, 130), "🎯 LIVE QUIZ CHALLENGE 🎯", font=font, fill=(255, 200, 0))
             draw.text((560, 130), f"⏱️ {timer_seconds}s", font=font, fill=(255, 75, 75))

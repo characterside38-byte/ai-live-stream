@@ -31,7 +31,6 @@ def generate_video_stream():
     width, height, fps = 1280, 720, 24
     rtmp_url = f"rtmp://a.rtmp.youtube.com/live2/{STREAM_KEY}"
     
-    # Yahan '-g 48' aur '-keyint_min 48' add kiya hai jo YouTube ka keyframe error fix karega
     command = [
         'ffmpeg', '-y', 
         '-f', 'rawvideo', '-vcodec', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f"{width}x{height}", '-r', str(fps), '-i', '-',
@@ -45,19 +44,26 @@ def generate_video_stream():
     process = subprocess.Popen(command, stdin=subprocess.PIPE)
     
     try:
-        font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 50)
+        font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 45)
+        small_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 30)
     except:
         font = ImageFont.load_default()
+        small_font = ImageFont.load_default()
 
     while True:
         img = Image.new('RGB', (width, height), color=(15, 25, 45))
         draw = ImageDraw.Draw(img)
         
+        # Live running clock add kiya hai taaki screen chalti hui dikhe
+        current_time = time.strftime('%H:%M:%S')
+        draw.text((950, 40), f"LIVE TIME: {current_time}", font=small_font, fill=(0, 255, 180))
+        draw.text((100, 40), "XOOMY PUZZLE ARENA", font=small_font, fill=(200, 200, 200))
+        
         margin = 100
-        offset = 250
+        offset = 220
         for line in display_text.split('\n'):
             draw.text((margin, offset), line, font=font, fill=(255, 255, 255))
-            offset += 60
+            offset += 65
             
         frame = np.array(img).tobytes()
         try:
@@ -80,11 +86,11 @@ def get_live_video_id():
 
 def ai_brain_and_chat():
     global display_text
-    time.sleep(20) 
+    time.sleep(15) 
 
     try:
         response = model.generate_content("Give me a short 1-line interesting logic or math puzzle in Hinglish.")
-        display_text = f"NEW PUZZLE:\n\n{response.text.strip()}\n\nAnswer in chat!"
+        display_text = f"QUESTION:\n\n{response.text.strip()}\n\nType your answer in chat!"
     except:
         pass
 
@@ -99,12 +105,12 @@ def ai_brain_and_chat():
         while chat.is_alive():
             for c in chat.get().sync_items():
                 msg = c.message.lower()
-                if "puzzle" in msg or "next" in msg:
+                if "puzzle" in msg or "next" in msg or "answer" in msg:
                     display_text = f"Wait {c.author.name}, naya puzzle aa raha hai..."
                     try:
-                        prompt = f"Viewer {c.author.name} asked for a puzzle. Give a very short 1-line interesting math or word puzzle in Hinglish."
+                        prompt = f"Viewer {c.author.name} asked for a new puzzle. Give a very short 1-line interesting math or logic puzzle in Hinglish."
                         response = model.generate_content(prompt)
-                        display_text = f"Puzzle for {c.author.name}:\n\n{response.text.strip()}"
+                        display_text = f"QUESTION (for {c.author.name}):\n\n{response.text.strip()}\n\nType answer in chat!"
                     except:
                         pass
             time.sleep(2)

@@ -1,0 +1,449 @@
+[
+  {
+    "q_hi": "ताजमहल किसने बनवाया था?",
+    "q_en": "Who built the Taj Mahal?",
+    "options": ["A) शाहजहाँ (Shah Jahan)", "B) अकबर (Akbar)", "C) बाबर (Babar)", "D) औरंगजेब (Aurangzeb)"],
+    "answer": "A) शाहजहाँ (Shah Jahan)"
+  },
+  {
+    "q_hi": "भारत की राजधानी क्या है?",
+    "q_en": "What is the capital of India?",
+    "options": ["A) मुंबई (Mumbai)", "B) दिल्ली (Delhi)", "C) कोलकाता (Kolkata)", "D) चेन्नई (Chennai)"],
+    "answer": "B) दिल्ली (Delhi)"
+  },
+  {
+    "q_hi": "सौरमंडल का सबसे बड़ा ग्रह कौन सा है?",
+    "q_en": "Which is the largest planet in the solar system?",
+    "options": ["A) मंगल (Mars)", "B) शुक्र (Venus)", "C) बृहस्पति (Jupiter)", "D) शनि (Saturn)"],
+    "answer": "C) बृहस्पति (Jupiter)"
+  },
+  {
+    "q_hi": "भारत का राष्ट्रीय पशु कौन सा है?",
+    "q_en": "What is the national animal of India?",
+    "options": ["A) शेर (Lion)", "B) बाघ (Tiger)", "C) हाथी (Elephant)", "D) चीता (Cheetah)"],
+    "answer": "B) बाघ (Tiger)"
+  },
+  {
+    "q_hi": "कंप्यूटर का दिमाग किसे कहा जाता है?",
+    "q_en": "What is called the brain of a computer?",
+    "options": ["A) रैम (RAM)", "B) सीपीयू (CPU)", "C) हार्ड डिस्क (Hard Disk)", "D) मॉनिटर (Monitor)"],
+    "answer": "B) सीपीयू (CPU)"
+  },
+  {
+    "q_hi": "भारत का राष्ट्रीय पक्षी कौन सा है?",
+    "q_en": "What is the national bird of India?",
+    "options": ["A) मोर (Peacock)", "B) तोता (Parrot)", "C) कबूतर (Pigeon)", "D) कौवा (Crow)"],
+    "answer": "A) मोर (Peacock)"
+  },
+  {
+    "q_hi": "भारत का राष्ट्रीय फूल कौन सा है?",
+    "q_en": "What is the national flower of India?",
+    "options": ["A) गुलाब (Rose)", "B) गेंदा (Marigold)", "C) कमल (Lotus)", "D) सूरजमुखी (Sunflower)"],
+    "answer": "C) कमल (Lotus)"
+  },
+  {
+    "q_hi": "भारत का राष्ट्रीय फल कौन सा है?",
+    "q_en": "What is the national fruit of India?",
+    "options": ["A) आम (Mango)", "B) सेब (Apple)", "C) केला (Banana)", "D) संतरा (Orange)"],
+    "answer": "A) आम (Mango)"
+  },
+  {
+    "q_hi": "भारत की सबसे लंबी नदी कौन सी है?",
+    "q_en": "Which is the longest river in India?",
+    "options": ["A) यमुना (Yamuna)", "B) गंगा (Ganga)", "C) ब्रह्मपुत्र (Brahmaputra)", "D) गोदावरी (Godavari)"],
+    "answer": "B) गंगा (Ganga)"
+  },
+  {
+    "q_hi": "पिंक सिटी (Pink City) किसे कहा जाता है?",
+    "q_en": "Which city is known as the Pink City?",
+    "options": ["A) उदयपुर (Udaipur)", "B) जोधपुर (Jodhpur)", "C) जयपुर (Jaipur)", "D) बीकानेर (Bikaner)"],
+    "answer": "C) जयपुर (Jaipur)"
+  },
+  {
+    "q_hi": "भारत की आर्थिक राजधानी किसे कहते हैं?",
+    "q_en": "What is called the financial capital of India?",
+    "options": ["A) मुंबई (Mumbai)", "B) दिल्ली (Delhi)", "C) बेंगलुरु (Bengaluru)", "D) कोलकाता (Kolkata)"],
+    "answer": "A) मुंबई (Mumbai)"
+  },
+  {
+    "q_hi": "गेटवे ऑफ इंडिया कहाँ स्थित है?",
+    "q_en": "Where is the Gateway of India located?",
+    "options": ["A) मुंबई (Mumbai)", "B) दिल्ली (Delhi)", "C) कोलकाता (Kolkata)", "D) चेन्नई (Chennai)"],
+    "answer": "A) मुंबई (Mumbai)"
+  },
+  {
+    "q_hi": "सिलिकॉन वैली ऑफ इंडिया किसे कहा जाता है?",
+    "q_en": "Which city is known as the Silicon Valley of India?",
+    "options": ["A) हैदराबाद (Hyderabad)", "B) बेंगलुरु (Bengaluru)", "C) पुणे (Pune)", "D) चेन्नई (Chennai)"],
+    "answer": "B) बेंगलुरु (Bengaluru)"
+  },
+  {
+    "q_hi": "भारत का राष्ट्रगान किसने लिखा है?",
+    "q_en": "Who wrote the national anthem of India?",
+    "options": ["A) रविंद्रनाथ टैगोर (Rabindranath Tagore)", "B) बंकिम चंद्र चटर्जी (Bankim Chandra Chatterjee)", "C) महात्मा गांधी (Mahatma Gandhi)", "D) प्रेम बिहारी राय (Prem Behari Rai)"],
+    "answer": "A) रविंद्रनाथ टैगोर (Rabindranath Tagore)"
+  },
+  {
+    "q_hi": "भारत का राष्ट्रीय गीत 'वंदे मातरम' किसने लिखा है?",
+    "q_en": "Who wrote the national song 'Vande Mataram' of India?",
+    "options": ["A) रविंद्रनाथ टैगोर (Rabindranath Tagore)", "B) बंकिम चंद्र चटर्जी (Bankim Chandra Chatterjee)", "C) सरोजिनी नायडू (Sarojini Naidu)", "D) सुभाष चंद्र बोस (Subhas Chandra Bose)"],
+    "answer": "B) बंकिम चंद्र चटर्जी (Bankim Chandra Chatterjee)"
+  },
+  {
+    "q_hi": "भारत के पहले प्रधानमंत्री कौन थे?",
+    "q_en": "Who was the first Prime Minister of India?",
+    "options": ["A) जवाहरलाल नेहरू (Jawaharlal Nehru)", "B) सरदार पटेल (Sardar Patel)", "C) डॉ. राजेंद्र प्रसाद (Dr. Rajendra Prasad)", "D) लाल बहादुर शास्त्री (Lal Bahadur Shastri)"],
+    "answer": "A) जवाहरलाल नेहरू (Jawaharlal Nehru)"
+  },
+  {
+    "q_hi": "भारत के पहले राष्ट्रपति कौन थे?",
+    "q_en": "Who was the first President of India?",
+    "options": ["A) जवाहरलाल नेहरू (Jawaharlal Nehru)", "B) डॉ. राजेंद्र प्रसाद (Dr. Rajendra Prasad)", "C) डॉ. सर्वपल्ली राधाकृष्णन (Dr. S. Radhakrishnan)", "D) वी. वी. गिरी (V. V. Giri)"],
+    "answer": "B) डॉ. राजेंद्र प्रसाद (Dr. Rajendra Prasad)"
+  },
+  {
+    "q_hi": "राष्ट्रपिता के रूप में किसे जाना जाता है?",
+    "q_en": "Who is known as the Father of the Nation?",
+    "options": ["A) सुभाष चंद्र बोस (Subhas Chandra Bose)", "B) भगत सिंह (Bhagat Singh)", "C) महात्मा गांधी (Mahatma Gandhi)", "D) सरदार पटेल (Sardar Patel)"],
+    "answer": "C) महात्मा गांधी (Mahatma Gandhi)"
+  },
+  {
+    "q_hi": "लौह पुरुष (Iron Man of India) किसे कहा जाता है?",
+    "q_en": "Who is known as the Iron Man of India?",
+    "options": ["A) जवाहरलाल नेहरू (Jawaharlal Nehru)", "B) लाल बहादुर शास्त्री (Lal Bahadur Shastri)", "C) भगत सिंह (Bhagat Singh)", "D) सरदार वल्लभभाई पटेल (Sardar Vallabhbhai Patel)"],
+    "answer": "D) सरदार वल्लभभाई पटेल (Sardar Vallabhbhai Patel)"
+  },
+  {
+    "q_hi": "मास्टर ब्लास्टर के नाम से किस क्रिकेटर को जाना जाता है?",
+    "q_en": "Which cricketer is known as Master Blaster?",
+    "options": ["A) सचिन तेंदुलकर (Sachin Tendulkar)", "B) एमएस धोनी (MS Dhoni)", "C) विराट कोहली (Virat Kohli)", "D) कपिल देव (Kapil Dev)"],
+    "answer": "A) सचिन तेंदुलकर (Sachin Tendulkar)"
+  },
+  {
+    "q_hi": "दुनिया की सबसे ऊँची चोटी कौन सी है?",
+    "q_en": "Which is the highest mountain peak in the world?",
+    "options": ["A) माउंट एवरेस्ट (Mount Everest)", "B) के2 (K2)", "C) कंचनजंगा (Kangchenjunga)", "D) मकालू (Makalu)"],
+    "answer": "A) माउंट एवरेस्ट (Mount Everest)"
+  },
+  {
+    "q_hi": "लाल किला कहाँ स्थित है?",
+    "q_en": "Where is the Red Fort located?",
+    "options": ["A) आगरा (Agra)", "B) दिल्ली (Delhi)", "C) जयपुर (Jaipur)", "D) लखनऊ (Lucknow)"],
+    "answer": "B) दिल्ली (Delhi)"
+  },
+  {
+    "q_hi": "कुतुब मीनार कहाँ स्थित है?",
+    "q_en": "Where is Qutub Minar located?",
+    "options": ["A) मुंबई (Mumbai)", "B) दिल्ली (Delhi)", "C) हैदराबाद (Hyderabad)", "D) आगरा (Agra)"],
+    "answer": "B) दिल्ली (Delhi)"
+  },
+  {
+    "q_hi": "चारमीनार कहाँ स्थित है?",
+    "q_en": "Where is Charminar located?",
+    "options": ["A) दिल्ली (Delhi)", "B) आगरा (Agra)", "C) हैदराबाद (Hyderabad)", "D) भोपाल (Bhopal)"],
+    "answer": "C) हैदराबाद (Hyderabad)"
+  },
+  {
+    "q_hi": "हवा महल कहाँ स्थित है?",
+    "q_en": "Where is Hawa Mahal located?",
+    "options": ["A) उदयपुर (Udaipur)", "B) जोधपुर (Jodhpur)", "C) जयपुर (Jaipur)", "D) अजमेर (Ajmer)"],
+    "answer": "C) जयपुर (Jaipur)"
+  },
+  {
+    "q_hi": "स्टैचू ऑफ यूनिटी किस राज्य में है?",
+    "q_en": "In which state is the Statue of Unity located?",
+    "options": ["A) गुजरात (Gujarat)", "B) महाराष्ट्र (Maharashtra)", "C) राजस्थान (Rajasthan)", "D) मध्य प्रदेश (Madhya Pradesh)"],
+    "answer": "A) गुजरात (Gujarat)"
+  },
+  {
+    "q_hi": "भारत की मुद्रा (Currency) क्या है?",
+    "q_en": "What is the currency of India?",
+    "options": ["A) भारतीय रुपया (Indian Rupee)", "B) टका (Taka)", "C) डॉलर (Dollar)", "D) येन (Yen)"],
+    "answer": "A) भारतीय रुपया (Indian Rupee)"
+  },
+  {
+    "q_hi": "भारतीय रिजर्व बैंक (RBI) का मुख्यालय कहाँ है?",
+    "q_en": "Where is the headquarters of RBI located?",
+    "options": ["A) नई दिल्ली (New Delhi)", "B) मुंबई (Mumbai)", "C) कोलकाता (Kolkata)", "D) चेन्नई (Chennai)"],
+    "answer": "B) मुंबई (Mumbai)"
+  },
+  {
+    "q_hi": "भारतीय अंतरिक्ष अनुसंधान संगठन (ISRO) का मुख्यालय कहाँ है?",
+    "q_en": "Where is the headquarters of ISRO located?",
+    "options": ["A) नई दिल्ली (New Delhi)", "B) श्रीहरिकोटा (Sriharikota)", "C) बेंगलुरु (Bengaluru)", "D) तिरुवनंतपुरम (Thiruvananthapuram)"],
+    "answer": "C) बेंगलुरु (Bengaluru)"
+  },
+  {
+    "q_hi": "राष्ट्रीय विज्ञान दिवस कब मनाया जाता है?",
+    "q_en": "When is National Science Day celebrated?",
+    "options": ["A) 28 जनवरी (28 January)", "B) 28 फरवरी (28 February)", "C) 28 मार्च (28 March)", "D) 28 अप्रैल (28 April)"],
+    "answer": "B) 28 फरवरी (28 February)"
+  },
+  {
+    "q_hi": "स्वतंत्रता दिवस कब मनाया जाता है?",
+    "q_en": "When is Independence Day celebrated?",
+    "options": ["A) 15 अगस्त (15 August)", "B) 26 जनवरी (26 January)", "C) 2 अक्टूबर (2 October)", "D) 14 नवंबर (14 November)"],
+    "answer": "A) 15 अगस्त (15 August)"
+  },
+  {
+    "q_hi": "गणतंत्र दिवस कब मनाया जाता है?",
+    "q_en": "When is Republic Day celebrated?",
+    "options": ["A) 15 अगस्त (15 August)", "B) 26 जनवरी (26 January)", "C) 2 अक्टूबर (2 October)", "D) 26 नवंबर (26 November)"],
+    "answer": "B) 26 जनवरी (26 January)"
+  },
+  {
+    "q_hi": "गांधी जयंती कब मनाई जाती है?",
+    "q_en": "When is Gandhi Jayanti celebrated?",
+    "options": ["A) 15 अगस्त (15 August)", "B) 26 जनवरी (26 January)", "C) 2 अक्टूबर (2 October)", "D) 14 नवंबर (14 November)"],
+    "answer": "C) 2 अक्टूबर (2 October)"
+  },
+  {
+    "q_hi": "शिक्षक दिवस (Teacher's Day) भारत में कब मनाया जाता है?",
+    "q_en": "When is Teacher's Day celebrated in India?",
+    "options": ["A) 5 सितंबर (5 September)", "B) 14 नवंबर (14 November)", "C) 5 अक्टूबर (5 October)", "D) 14 सितंबर (14 September)"],
+    "answer": "A) 5 सितंबर (5 September)"
+  },
+  {
+    "q_hi": "बाल दिवस (Children's Day) कब मनाया जाता है?",
+    "q_en": "When is Children's Day celebrated?",
+    "options": ["A) 5 सितंबर (5 September)", "B) 14 नवंबर (14 November)", "C) 2 अक्टूबर (2 October)", "D) 26 जनवरी (26 January)"],
+    "answer": "B) 14 नवंबर (14 November)"
+  },
+  {
+    "q_hi": "पर्यावरण दिवस (Environment Day) कब मनाया जाता है?",
+    "q_en": "When is Environment Day celebrated?",
+    "options": ["A) 5 जून (5 June)", "B) 21 जून (21 June)", "C) 22 अप्रैल (22 April)", "D) 11 जुलाई (11 July)"],
+    "answer": "A) 5 जून (5 June)"
+  },
+  {
+    "q_hi": "अंतर्राष्ट्रीय योग दिवस कब मनाया जाता है?",
+    "q_en": "When is International Yoga Day celebrated?",
+    "options": ["A) 5 जून (5 June)", "B) 21 जून (21 June)", "C) 22 मार्च (22 March)", "D) 21 दिसंबर (21 December)"],
+    "answer": "B) 21 जून (21 June)"
+  },
+  {
+    "q_hi": "जल दिवस कब मनाया जाता है?",
+    "q_en": "When is World Water Day celebrated?",
+    "options": ["A) 22 मार्च (22 March)", "B) 22 अप्रैल (22 April)", "C) 22 मई (22 May)", "D) 22 जून (22 June)"],
+    "answer": "A) 22 मार्च (22 March)"
+  },
+  {
+    "q_hi": "पृथ्वी दिवस कब मनाया जाता है?",
+    "q_en": "When is Earth Day celebrated?",
+    "options": ["A) 22 मार्च (22 March)", "B) 22 अप्रैल (22 April)", "C) 5 जून (5 June)", "D) 16 सितंबर (16 September)"],
+    "answer": "B) 22 अप्रैल (22 April)"
+  },
+  {
+    "q_hi": "हिंदी दिवस कब मनाया जाता है?",
+    "q_en": "When is Hindi Diwas celebrated?",
+    "options": ["A) 10 जनवरी (10 January)", "B) 14 सितंबर (14 September)", "C) 14 नवंबर (14 November)", "D) 26 नवंबर (26 November)"],
+    "answer": "B) 14 सितंबर (14 September)"
+  },
+  {
+    "q_hi": "सौरमंडल का सबसे छोटा ग्रह कौन सा है?",
+    "q_en": "Which is the smallest planet in the solar system?",
+    "options": ["A) बुध (Mercury)", "B) शुक्र (Venus)", "C) मंगल (Mars)", "D) नेपच्यून (Neptune)"],
+    "answer": "A) बुध (Mercury)"
+  },
+  {
+    "q_hi": "सबसे गर्म ग्रह कौन सा है?",
+    "q_en": "Which is the hottest planet?",
+    "options": ["A) बुध (Mercury)", "B) शुक्र (Venus)", "C) पृथ्वी (Earth)", "D) मंगल (Mars)"],
+    "answer": "B) शुक्र (Venus)"
+  },
+  {
+    "q_hi": "लाल ग्रह (Red Planet) किसे कहा जाता है?",
+    "q_en": "Which planet is known as the Red Planet?",
+    "options": ["A) बृहस्पति (Jupiter)", "B) शनि (Saturn)", "C) मंगल (Mars)", "D) यूरेनस (Uranus)"],
+    "answer": "C) मंगल (Mars)"
+  },
+  {
+    "q_hi": "नीला ग्रह (Blue Planet) किसे कहा जाता है?",
+    "q_en": "Which planet is known as the Blue Planet?",
+    "options": ["A) शुक्र (Venus)", "B) पृथ्वी (Earth)", "C) नेपच्यून (Neptune)", "D) यूरेनस (Uranus)"],
+    "answer": "B) पृथ्वी (Earth)"
+  },
+  {
+    "q_hi": "भोर का तारा या सांझ का तारा किसे कहते हैं?",
+    "q_en": "Which is known as the Morning Star or Evening Star?",
+    "options": ["A) मंगल (Mars)", "B) शुक्र (Venus)", "C) बुध (Mercury)", "D) बृहस्पति (Jupiter)"],
+    "answer": "B) शुक्र (Venus)"
+  },
+  {
+    "q_hi": "पृथ्वी का एकमात्र प्राकृतिक उपग्रह कौन सा है?",
+    "q_en": "What is the only natural satellite of Earth?",
+    "options": ["A) चंद्रमा (Moon)", "B) टाइटन (Titan)", "C) फोбоस (Phobos)", "D) गेनीमेड (Ganymede)"],
+    "answer": "A) चंद्रमा (Moon)"
+  },
+  {
+    "q_hi": "प्रकाश वर्ष (Light Year) किसकी इकाई है?",
+    "q_en": "A light year is a unit of what?",
+    "options": ["A) समय (Time)", "B) दूरी (Distance)", "C) प्रकाश की गति (Speed of light)", "D) ऊर्जा (Energy)"],
+    "answer": "B) दूरी (Distance)"
+  },
+  {
+    "q_hi": "कोशिका का पावरहाउस (Powerhouse of the cell) किसे कहा जाता है?",
+    "q_en": "What is called the powerhouse of the cell?",
+    "options": ["A) माइटोकॉन्ड्रिया (Mitochondria)", "B) राइबोसोम (Ribosome)", "C) केंद्रक (Nucleus)", "D) लाइसोसोम (Lysosome)"],
+    "answer": "A) माइटोकॉन्ड्रिया (Mitochondria)"
+  },
+  {
+    "q_hi": "सोने का रासायनिक प्रतीक (Chemical Symbol) क्या है?",
+    "q_en": "What is the chemical symbol for Gold?",
+    "options": ["A) Ag", "B) Au", "C) Fe", "D) Cu"],
+    "answer": "B) Au"
+  },
+  {
+    "q_hi": "चांदी का रासायनिक प्रतीक क्या है?",
+    "q_en": "What is the chemical symbol for Silver?",
+    "options": ["A) Au", "B) Ag", "C) Pb", "D) Hg"],
+    "answer": "B) Ag"
+  },
+  {
+    "q_hi": "लोहे का रासायनिक प्रतीक क्या है?",
+    "q_en": "What is the chemical symbol for Iron?",
+    "options": ["A) Fe", "B) Na", "C) K", "D) Ca"],
+    "answer": "A) Fe"
+  },
+  {
+    "q_hi": "सोडियम का रासायनिक प्रतीक क्या है?",
+    "q_en": "What is the chemical symbol for Sodium?",
+    "options": ["A) So", "B) Sd", "C) Na", "D) N"],
+    "answer": "C) Na"
+  },
+  {
+    "q_hi": "पानी का रासायनिक सूत्र क्या है?",
+    "q_en": "What is the chemical formula for water?",
+    "options": ["A) H2O", "B) CO2", "C) NaCl", "D) O2"],
+    "answer": "A) H2O"
+  },
+  {
+    "q_hi": "साधारण नमक का रासायनिक सूत्र क्या है?",
+    "q_en": "What is the chemical formula for common salt?",
+    "options": ["A) H2O", "B) NaCl", "C) NaOH", "D) HCl"],
+    "answer": "B) NaCl"
+  },
+  {
+    "q_hi": "कार्बन डाइऑक्साइड का सूत्र क्या है?",
+    "q_en": "What is the formula for carbon dioxide?",
+    "options": ["A) CO", "B) CO2", "C) C2O", "D) O2C"],
+    "answer": "B) CO2"
+  },
+  {
+    "q_hi": "हंसाने वाली गैस (Laughing Gas) किसे कहते हैं?",
+    "q_en": "What is known as Laughing Gas?",
+    "options": ["A) कार्बन मोनोऑक्साइड (Carbon Monoxide)", "B) सल्फर डाइऑक्साइड (Sulfur Dioxide)", "C) नाइट्रस ऑक्साइड (Nitrous Oxide)", "D) हीलियम (Helium)"],
+    "answer": "C) नाइट्रस ऑक्साइड (Nitrous Oxide)"
+  },
+  {
+    "q_hi": "प्रकृति में सबसे कठोर पदार्थ कौन सा है?",
+    "q_en": "What is the hardest natural substance on Earth?",
+    "options": ["A) हीरा (Diamond)", "B) ग्रेफाइट (Graphite)", "C) लोहा (Iron)", "D) क्वार्ट्ज (Quartz)"],
+    "answer": "A) हीरा (Diamond)"
+  },
+  {
+    "q_hi": "वायुमंडल में सबसे अधिक मात्रा में कौन सी गैस पाई जाती है?",
+    "q_en": "Which gas is present in the highest amount in the atmosphere?",
+    "options": ["A) ऑक्सीजन (Oxygen)", "B) नाइट्रोजन (Nitrogen)", "C) कार्बन डाइऑक्साइड (Carbon Dioxide)", "D) आर्गन (Argon)"],
+    "answer": "B) नाइट्रोजन (Nitrogen)"
+  },
+  {
+    "q_hi": "वायुमंडल में ऑक्सीजन कितने प्रतिशत है?",
+    "q_en": "What is the percentage of oxygen in the atmosphere?",
+    "options": ["A) 78%", "B) 21%", "C) 0.03%", "D) 1%"],
+    "answer": "B) 21%"
+  },
+  {
+    "q_hi": "पानी का क्वथनांक (Boiling Point) कितना होता है?",
+    "q_en": "What is the boiling point of water?",
+    "options": ["A) 0°C", "B) 50°C", "C) 100°C", "D) 212°C"],
+    "answer": "C) 100°C"
+  },
+  {
+    "q_hi": "पानी का हिमांक (Freezing Point) कितना होता है?",
+    "q_en": "What is the freezing point of water?",
+    "options": ["A) 0°C", "B) 32°C", "C) 100°C", "D) -10°C"],
+    "answer": "A) 0°C"
+  },
+  {
+    "q_hi": "विटामिन सी की कमी से कौन सा रोग होता है?",
+    "q_en": "Which disease is caused by the deficiency of Vitamin C?",
+    "options": ["A) रतांधी (Night blindness)", "B) बेरीबेरी (Beriberi)", "C) स्कर्वी (Scurvy)", "D) रिकेट्स (Rickets)"],
+    "answer": "C) स्कर्वी (Scurvy)"
+  },
+  {
+    "q_hi": "विटामिन ए की कमी से कौन सा रोग होता है?",
+    "q_en": "Which disease is caused by the deficiency of Vitamin A?",
+    "options": ["A) रतांधी (Night blindness)", "B) स्कर्वी (Scurvy)", "C) एनीमिया (Anemia)", "D) घेंघा (Goitre)"],
+    "answer": "A) रतांधी (Night blindness)"
+  },
+  {
+    "q_hi": "विटामिन डी की कमी से बच्चों में कौन सा रोग होता है?",
+    "q_en": "Which disease is caused by Vitamin D deficiency in children?",
+    "options": ["A) स्कर्वी (Scurvy)", "B) रिकेट्स (Rickets)", "C) बेरीबेरी (Beriberi)", "D) मधुमेह (Diabetes)"],
+    "answer": "B) रिकेट्स (Rickets)"
+  },
+  {
+    "q_hi": "खून का थक्का जमाने में कौन सा विटामिन मददगार है?",
+    "q_en": "Which vitamin helps in blood clotting?",
+    "options": ["A) विटामिन ए (Vitamin A)", "B) विटामिन बी (Vitamin B)", "C) विटामिन सी (Vitamin C)", "D) विटामिन के (Vitamin K)"],
+    "answer": "D) विटामिन के (Vitamin K)"
+  },
+  {
+    "q_hi": "लाल रक्त कणिकाओं (RBC) का जीवनकाल कितना होता है?",
+    "q_en": "What is the lifespan of Red Blood Cells (RBC)?",
+    "options": ["A) 60 दिन (60 days)", "B) 120 दिन (120 days)", "C) 180 दिन (180 days)", "D) 30 दिन (30 days)"],
+    "answer": "B) 120 दिन (120 days)"
+  },
+  {
+    "q_hi": "मानव शरीर का सबसे बड़ा अंग (Organ) कौन सा है?",
+    "q_en": "What is the largest organ in the human body?",
+    "options": ["A) यकृत (Liver)", "B) फेफड़ा (Lungs)", "C) त्वचा (Skin)", "D) हृदय (Heart)"],
+    "answer": "C) त्वचा (Skin)"
+  },
+  {
+    "q_hi": "मानव शरीर की सबसे बड़ी ग्रंथि (Gland) कौन सी है?",
+    "q_en": "What is the largest gland in the human body?",
+    "options": ["A) यकृत (Liver)", "B) थायराइड (Thyroid)", "C) अग्न्याशय (Pancreas)", "D) पिट्यूटरी (Pituitary)"],
+    "answer": "A) यकृत (Liver)"
+  },
+  {
+    "q_hi": "मानव शरीर की सबसे छोटी हड्डी कौन सी है?",
+    "q_en": "What is the smallest bone in the human body?",
+    "options": ["A) फीमर (Femur)", "B) स्टेपीज (Stapes)", "C) टीibia", "D) ह्यूमरस (Humerus)"],
+    "answer": "B) स्टेपीज (Stapes)"
+  },
+  {
+    "q_hi": "मानव शरीर की सबसे लंबी हड्डी कौन सी है?",
+    "q_en": "What is the longest bone in the human body?",
+    "options": ["A) फीमर (Femur)", "B) स्टेपीज (Stapes)", "C) रेडियस (Radius)", "D) अल्ना (Ulna)"],
+    "answer": "A) फीमर (Femur)"
+  },
+  {
+    "q_hi": "स्वस्थ मनुष्य के शरीर का सामान्य तापमान कितना होता है?",
+    "q_en": "What is the normal body temperature of a healthy human?",
+    "options": ["A) 37°C / 98.6°F", "B) 40°C / 104°F", "C) 35°C / 95°F", "D) 32°C / 90°F"],
+    "answer": "A) 37°C / 98.6°F"
+  },
+  {
+    "q_hi": "एक वयस्क मनुष्य के शरीर में कुल कितनी हड्डियां होती हैं?",
+    "q_en": "How many bones are there in an adult human body?",
+    "options": ["A) 300", "B) 206", "C) 210", "D) 180"],
+    "answer": "B) 206"
+  },
+  {
+    "q_hi": "सर्वग्राही (Universal Recipient) रक्त समूह कौन सा है?",
+    "q_en": "Which blood group is a universal recipient?",
+    "options": ["A) O negative", "B) A positive", "C) B positive", "D) AB positive"],
+    "answer": "D) AB positive"
+  },
+  {
+    "q_hi": "सर्वदाता (Universal Donor) रक्त समूह कौन सा है?",
+    "q_en": "Which blood group is a universal donor?",
+    "options": ["A) O negative", "B) A positive", "C) B positive", "D) AB positive"],
+    "answer": "A) O negative"
+  },
+  {
+    "q_hi": "अंतरिक्ष में जाने वाले पहले भारतीय कौन थे?",
+    "q_en": "Who was the first Indian to go into space?",
+    "options": ["A) राकेश शर्मा (Rakesh Sharma)", "B) कल्पना चावला (Kalpana Chawla)", "C) सुनीता विलियम्स (Sunita Williams)", "D) विक

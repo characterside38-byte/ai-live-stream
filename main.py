@@ -13,7 +13,6 @@ import re
 app = Flask(__name__)
 
 STREAM_KEY = os.environ.get("STREAM_KEY", "your_stream_key")
-# Ab VIDEO_ID ki jagah hum aapka Channel Handle use karenge
 CHANNEL_HANDLE = os.environ.get("CHANNEL_HANDLE", "@your_channel") 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "your_api_key")
 
@@ -32,11 +31,14 @@ def generate_video_stream():
     width, height, fps = 1280, 720, 24
     rtmp_url = f"rtmp://a.rtmp.youtube.com/live2/{STREAM_KEY}"
     
+    # Yahan silent audio track add kiya gaya hai
     command = [
-        'ffmpeg', '-y', '-f', 'rawvideo', '-vcodec', 'rawvideo',
-        '-pix_fmt', 'rgb24', '-s', f"{width}x{height}", '-r', str(fps),
-        '-i', '-', '-c:v', 'libx264', '-pix_fmt', 'yuv420p',
-        '-preset', 'ultrafast', '-b:v', '2500k', '-f', 'flv', rtmp_url
+        'ffmpeg', '-y', 
+        '-f', 'rawvideo', '-vcodec', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f"{width}x{height}", '-r', str(fps), '-i', '-',
+        '-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=44100',
+        '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'ultrafast', '-b:v', '2500k',
+        '-c:a', 'aac', '-b:a', '128k',
+        '-f', 'flv', rtmp_url
     ]
     
     process = subprocess.Popen(command, stdin=subprocess.PIPE)
@@ -64,7 +66,6 @@ def generate_video_stream():
         time.sleep(1/fps)
 
 def get_live_video_id():
-    """Yeh function khud aapke channel se live video ka ID nikalega"""
     url = f"https://www.youtube.com/{CHANNEL_HANDLE}/live"
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -78,7 +79,7 @@ def get_live_video_id():
 
 def ai_brain_and_chat():
     global display_text
-    time.sleep(20) # Stream YouTube par live aane ka wait
+    time.sleep(20) 
 
     try:
         response = model.generate_content("Give me a short 1-line interesting logic or math puzzle in Hinglish.")
@@ -86,12 +87,11 @@ def ai_brain_and_chat():
     except:
         pass
 
-    # Yahan AI khud naya Video ID dhoondhega
     video_id = None
     while not video_id:
         video_id = get_live_video_id()
         if not video_id:
-            time.sleep(10) # Agar stream chalu nahi hui hai toh wait karega
+            time.sleep(10)
     
     try:
         chat = pytchat.create(video_id=video_id)

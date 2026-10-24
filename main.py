@@ -20,7 +20,6 @@ if GEMINI_API_KEY != "your_api_key":
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel('gemini-2.5-flash')
 
-# Normal welcoming text
 display_text = "Welcome to XOOMY Live!\nGet ready for the next puzzle..."
 
 @app.route('/')
@@ -32,12 +31,13 @@ def generate_video_stream():
     width, height, fps = 1280, 720, 24
     rtmp_url = f"rtmp://a.rtmp.youtube.com/live2/{STREAM_KEY}"
     
-    # FFmpeg command with silent audio track
+    # Yahan '-g 48' aur '-keyint_min 48' add kiya hai jo YouTube ka keyframe error fix karega
     command = [
         'ffmpeg', '-y', 
         '-f', 'rawvideo', '-vcodec', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f"{width}x{height}", '-r', str(fps), '-i', '-',
         '-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=44100',
         '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'ultrafast', '-b:v', '2500k',
+        '-g', '48', '-keyint_min', '48',
         '-c:a', 'aac', '-b:a', '128k',
         '-f', 'flv', rtmp_url
     ]

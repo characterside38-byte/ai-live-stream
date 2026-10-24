@@ -26,7 +26,7 @@ level = 1
 snake_pos = [[360, 400], [340, 400], [320, 400]]
 snake_dir = [20, 0]
 food_pos = [360, 600]
-commentary = "Pro gameplay running smoothly!"
+chat_feed = "Welcome to the stream!"
 
 quiz_question = "Q: India ki capital kya hai?"
 quiz_options = "A) Mumbai\nB) Delhi\nC) Kolkata\nD) Chennai"
@@ -39,13 +39,12 @@ def keep_alive():
     return "Stream is LIVE!"
 
 def generate_video_stream():
-    global current_mode, score, level, snake_pos, snake_dir, food_pos, commentary
+    global current_mode, score, level, snake_pos, snake_dir, food_pos, chat_feed
     global quiz_question, quiz_options, quiz_answer, timer_seconds, quiz_state
     
     width, height, fps = 720, 1280, 24
     rtmp_url = f"rtmp://a.rtmp.youtube.com/live2/{STREAM_KEY}"
     
-    # Bitrate reduced to 1200k for smooth rendering on Render free tier without dropped frames
     command = [
         'ffmpeg', '-y', 
         '-f', 'rawvideo', '-vcodec', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f"{width}x{height}", '-r', str(fps), '-i', '-',
@@ -110,7 +109,7 @@ def generate_video_stream():
                     if score % 50 == 0:
                         level += 1
                     food_pos = [random.randint(70, 650), random.randint(130, 800)]
-                    commentary = random.choice([
+                    chat_feed = random.choice([
                         "Nice shot! Apple kha liya!", 
                         "Pro gamer moves!", 
                         "Next quiz coming up shortly...",
@@ -132,9 +131,9 @@ def generate_video_stream():
             
             draw.rectangle([35, 880, 685, 1235], fill=(22, 32, 48), outline=(70, 130, 180), width=2)
             draw.text((55, 900), f"📊 Score: {score}   |   Level: {level}", font=font, fill=(255, 200, 0))
-            draw.text((55, 960), "💬 FEED:", font=small_font, fill=(0, 255, 180))
-            draw.text((150, 960), commentary[:38], font=small_font, fill=(220, 230, 255))
-            draw.text((55, 1010), "⏳ Next Quiz arriving soon in Arena...", font=small_font, fill=(255, 100, 100))
+            draw.text((55, 960), "💬 CHAT FEED:", font=small_font, fill=(0, 255, 180))
+            draw.text((180, 960), chat_feed[:32], font=small_font, fill=(220, 230, 255))
+            draw.text((55, 1010), "⏳ Next Quiz arriving soon...", font=small_font, fill=(255, 100, 100))
             draw.text((55, 1100), "👉 Type answers in live chat!", font=font, fill=(0, 255, 180))
 
         elif current_mode == "QUIZ":
@@ -179,7 +178,7 @@ def get_live_video_id():
     return None
 
 def ai_brain_loop():
-    global current_mode, quiz_question, quiz_options, quiz_answer, timer_seconds, quiz_state, commentary
+    global current_mode, quiz_question, quiz_options, quiz_answer, timer_seconds, quiz_state, chat_feed
     time.sleep(15)
 
     video_id = None
@@ -192,7 +191,7 @@ def ai_brain_loop():
 
     while True:
         current_mode = "GAME"
-        commentary = "Arcade gameplay session active!"
+        chat_feed = "Arcade gameplay session active!"
         time.sleep(300) 
 
         current_mode = "QUIZ"
@@ -214,12 +213,12 @@ def ai_brain_loop():
             quiz_answer = "Correct Answer: B) Ganga"
 
 def handle_chat(video_id):
-    global commentary
+    global chat_feed
     try:
         chat = pytchat.create(video_id=video_id)
         while chat.is_alive():
             for c in chat.get().sync_items():
-                commentary = f"{c.author.name}: {c.message[:25]}"
+                chat_feed = f"{c.author.name}: {c.message[:25]}"
             time.sleep(2)
     except Exception:
         pass

@@ -50,12 +50,13 @@ def generate_video_stream():
     width, height, fps = 720, 1280, 24
     rtmp_url = f"rtmp://a.rtmp.youtube.com/live2/{STREAM_KEY}"
     
-    # FFmpeg command with continuous ambient gaming background audio generator
+    # Fixed FFmpeg command with explicit mapping for video and audio to prevent 0 bitrate error
     command = [
         'ffmpeg', '-y', 
         '-f', 'rawvideo', '-vcodec', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f"{width}x{height}", '-r', str(fps), '-i', '-',
-        '-f', 'lavfi', '-i', 'sine=f=150:r=44100,volume=0.12[s1]; sine=f=300:r=44100,volume=0.06[s2]; [s1][s2]amix=inputs=2',
-        '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'ultrafast', '-b:v', '1200k',
+        '-f', 'lavfi', '-i', 'sine=frequency=220:sample_rate=44100',
+        '-map', '0:v', '-map', '1:a',
+        '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'ultrafast', '-b:v', '1000k',
         '-g', '48', '-keyint_min', '48',
         '-c:a', 'aac', '-b:a', '128k',
         '-f', 'flv', rtmp_url

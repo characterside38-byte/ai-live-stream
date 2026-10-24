@@ -20,7 +20,8 @@ if GEMINI_API_KEY != "your_api_key":
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel('gemini-2.5-flash')
 
-display_text = "Stream Starting...\nWaiting for AI to generate puzzle."
+# Normal welcoming text
+display_text = "Welcome to XOOMY Live!\nGet ready for the next puzzle..."
 
 @app.route('/')
 def keep_alive():
@@ -31,7 +32,7 @@ def generate_video_stream():
     width, height, fps = 1280, 720, 24
     rtmp_url = f"rtmp://a.rtmp.youtube.com/live2/{STREAM_KEY}"
     
-    # Yahan silent audio track add kiya gaya hai
+    # FFmpeg command with silent audio track
     command = [
         'ffmpeg', '-y', 
         '-f', 'rawvideo', '-vcodec', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f"{width}x{height}", '-r', str(fps), '-i', '-',
@@ -99,7 +100,7 @@ def ai_brain_and_chat():
             for c in chat.get().sync_items():
                 msg = c.message.lower()
                 if "puzzle" in msg or "next" in msg:
-                    display_text = f"Generating new puzzle for {c.author.name}..."
+                    display_text = f"Wait {c.author.name}, naya puzzle aa raha hai..."
                     try:
                         prompt = f"Viewer {c.author.name} asked for a puzzle. Give a very short 1-line interesting math or word puzzle in Hinglish."
                         response = model.generate_content(prompt)

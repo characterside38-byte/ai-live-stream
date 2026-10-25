@@ -443,7 +443,14 @@
     "options": ["A) O negative", "B) A positive", "C) B positive", "D) AB positive"],
     "answer": "A) O negative"
   },
-  {
-    "q_hi": "अंतरिक्ष में जाने वाले पहले भारतीय कौन थे?",
-    "q_en": "Who was the first Indian to go into space?",
-    "options": ["A) राकेश शर्मा (Rakesh Sharma)", "B) कल्पना चावला (Kalpana Chawla)", "C) सुनीता विलियम्स (Sunita Williams)", "D) विक
+    {
+      "q_hi": "अंतरिक्ष में जाने वाले पहले भारतीय कौन थे?",
+      "q_en": "Who was the first Indian to go into space?",
+      "options": [
+        "A) राकेश शर्मा (Rakesh Sharma)", 
+        "B) कल्पना चावला (Kalpana Chawla)", 
+        "C) सुनीता विलियम्स (Sunita Williams)", 
+        "D) विक्रम साराभाई (Vikram Sarabhai)"
+      ],
+      "answer": "A) राकेश शर्मा (Rakesh Sharma)"
+    }
